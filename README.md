@@ -114,8 +114,9 @@ void ep() {
 	}
 }
 
-void upg_self(int p) {
-	moves.pb(ar3{p, p, upgc(p)});
+void upg_self(int pp) {
+	p[pp].cnt -= upgc(pp);
+	moves.pb(ar3{pp, pp, upgc(pp)});
 }
 
 signed main() {
